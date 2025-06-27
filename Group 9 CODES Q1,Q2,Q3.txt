@@ -1,0 +1,44 @@
+Question 1: 
+
+def student_management_system():
+    Name= input("Enter your name:")
+    Age= input("Enter your age:")
+    Maths= float(input("Enter your Maths grade:"))
+    BigData= float(input("Enter your BigData grade:"))
+    WebDesign= float(input("Enter your WebDesign grade:"))
+
+    Average= float(Maths + BigData + WebDesign)/3
+
+    print(f"Name:",Name)
+    print(f"Age:",Age)
+    print(f"Average:", Average)
+student_management_system()
+
+
+Question 2: 
+
+def palindrome_word():
+    Word = input("Enter the word:")
+    
+    if Word == Word[::-1]:
+        print("The word is a palindrome.")
+    else:
+        print("The word is not a palindrome.")
+palindrome_word()
+
+
+Question3: 
+def iterate_two_inputs():
+    string1= input("Enter the first text: ")
+    string2 = input("Enter the second text: ")
+
+    string_conca = string1 + string2
+    character_list = list(string_conca)
+
+    print(f"Characters in the combined text:")
+    for char in character_list:
+        print(char)
+
+    print(f"Thank you for using my application")
+    return character_list
+iterate_two_inputs()
